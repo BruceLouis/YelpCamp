@@ -21,7 +21,9 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 //seedDB();
-mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true });
+mongoose.connect("mongodb://brucelouis:whosy0urdaddy@ds121312.mlab.com:21312/yelpcamp", { useNewUrlParser: true });
+
 
 //passport configuration
 app.use(require("express-session")({
